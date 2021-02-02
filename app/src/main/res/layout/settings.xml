@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#1D456E"
+    tools:context=".SettingsActivity">
+
+    <Switch
+        android:id="@+id/switch_dark_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:text="Dark mode"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="@android:integer/config_longAnimTime"
+        android:textSize="20dp" />
+
+    <Switch
+        android:id="@+id/switch_camera"
+        android:layout_marginTop="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textFontWeight="@android:integer/config_longAnimTime"
+        android:textColor="#FFFFFF"
+        android:text="Camera permission" />
+    <Switch
+        android:id="@+id/switch_location"
+        android:layout_marginTop="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textFontWeight="@android:integer/config_longAnimTime"
+        android:text="Location permission" />
+    <Button
+        android:id="@+id/btn_go_back"
+        android:layout_marginTop="395sp"
+        android:background="#E91E63"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="go back"
+        android:textSize="14dp" />
+</LinearLayout>

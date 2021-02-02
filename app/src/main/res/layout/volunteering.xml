@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".VolunteeringActivity">
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:background="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0.00000000001sp"
+        android:id="@+id/r"
+        android:hint="@string/find_out_volunteering_options"
+        android:backgroundTint="#DAD2E8"
+        android:inputType="textFilter" />
+    <Button
+        android:id="@+id/addV"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="537sp"
+        android:text="@string/A"
+        android:textSize="50sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_marginTop="1sp"
+        android:background="#E91E63"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="go back"
+        android:layout_gravity="right"
+        android:textSize="10dp" />
+
+
+</LinearLayout>

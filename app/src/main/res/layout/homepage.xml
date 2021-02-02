@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#1D456E"
+    tools:context=".HomePageActivity">
+    <Button
+                android:id="@+id/btnout"
+                android:background="#031A32"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:text="Log out"
+                android:layout_marginTop="1sp"
+                android:textSize="14dp" />
+            <Button
+                android:id="@+id/btnpro"
+                android:background="#031A32"
+                android:layout_width="121dp"
+                android:layout_height="55dp"
+                android:text="Profile"
+                android:layout_marginTop="1sp"
+                android:textSize="14dp" />
+    <Button
+        android:id="@+id/btng"
+        android:background="#031A32"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:text="gallery"
+        android:layout_marginTop="1sp"
+        android:textSize="14dp" />
+            <Button
+                android:id="@+id/btnor"
+                android:background="#031A32"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="ornithology"
+                android:layout_marginTop="1sp"
+                android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/btv"
+                    android:background="#031A32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:text="volunteering"
+                    android:layout_marginTop="1sp"
+                    android:textSize="14dp" />
+                <Button
+                    android:id="@+id/btns"
+                    android:background="#031A32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:text="settings"
+                    android:layout_marginTop="1sp"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/btnf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="1sp"
+                    android:background="#031A32"
+                    android:text="first aid"
+                    android:textSize="14dp" />
+    <Button
+        android:id="@+id/btnaniid"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="1sp"
+        android:background="#031A32"
+        android:text="Animal identification"
+        android:textSize="14dp" />
+    </LinearLayout>

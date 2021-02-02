@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "580410792429",
+    "project_id": "come-and-see-9d419",
+    "storage_bucket": "come-and-see-9d419.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580410792429:android:10d5dcbe856e81b7ceefe4",
+        "android_client_info": {
+          "package_name": "com.example.comeandsee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580410792429-9kdqd23a5dtti6d9h9gsj80r04qcjh7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGmKkS9Ve9A-9WImueK6sfXVLPBNu9tDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580410792429-9kdqd23a5dtti6d9h9gsj80r04qcjh7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
