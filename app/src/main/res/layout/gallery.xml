@@ -2,59 +2,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#B9ED98"
+    android:background="#FFFFFF"
     tools:context=".GalleryActivity">
-    <HorizontalScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        >
+<HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-       android:id="@+id/gallery">
-
-    </LinearLayout>
-
-    </HorizontalScrollView>
-
-    <EditText
-        android:id="@+id/searchp"
-        android:layout_width="410dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="1sp"
-        android:backgroundTint="#ADE38B"
-        android:gravity="center"
-        android:hint="search profile"
-
-        ></EditText>
+        android:id="@+id/lhs"
+        ></LinearLayout>
+</HorizontalScrollView>
 <ImageButton
-        android:id="@+id/atg"
+        android:id="@+id/add_to_gallery"
         android:layout_width="85dp"
         android:layout_height="62dp"
         android:layout_marginTop="20dp"
-        app:srcCompat="@android:drawable/ic_input_add"
+        app:srcCompat="@android:drawable/ic_menu_camera"
         tools:layout_editor_absoluteX="33sp"
-        android:background="#ADE38B"
+        android:background="#009688"
         tools:layout_editor_absoluteY="653dp"
         android:layout_gravity="center"/>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ivgallery"
-        android:layout_marginTop="40dp"
+        android:id="@+id/iv_gallery"
+        tools:srcCompet="@tools:sample/avatars"
         android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         ></ImageView>
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:id="@+id/go_back_fg"
-        android:layout_marginTop="10dp"
-        android:text="go back"
-        />
 
 </LinearLayout>

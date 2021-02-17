@@ -1,5 +1,6 @@
 package com.example.comeandsee;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,10 +16,16 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button btncr;
     private Button btnin;
-    private EditText userName, Password;
+    private EditText userName, password;
+    private FirebaseAuth firebaseAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,9 +33,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnin = findViewById(R.id.btnin);
         btncr = findViewById(R.id.btncr);
         userName = findViewById(R.id.userName);
-        Password = findViewById(R.id.Password);
+        password = findViewById(R.id.Password);
         btncr.setOnClickListener(this);
         btnin.setOnClickListener(this);
+        firebaseAuth = FirebaseAuth.getInstance();
+        if (firebaseAuth.getCurrentUser()!=null){
+            Intent intent = new Intent(this, HomePageActivity.class);
+            startActivity(intent);
+        }
     }
 
 
@@ -40,9 +52,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if (v == btnin) {
             Intent intent = new Intent(this, HomePageActivity.class);
-            intent.putExtra("userName", userName.getText().toString());
-            intent.putExtra("Password", Password.getText().toString());
-            startActivity(intent);
+            firebaseAuth.signInWithEmailAndPassword(userName.getText().toString(),password.getText().toString() ).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (task.isSuccessful()){
+                        startActivity(intent);
+                    }
+                }
+            });
         }
     }
 }
