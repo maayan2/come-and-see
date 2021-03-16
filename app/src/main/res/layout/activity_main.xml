@@ -26,8 +26,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="30sp"
         android:gravity="center"
-        android:id="@+id/userName"
-        android:hint="Enter user name"
+        android:id="@+id/email"
+        android:hint="Enter email"
         android:backgroundTint="#DAD2E8"
 
         />
