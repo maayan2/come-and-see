@@ -49,15 +49,6 @@
                     android:layout_marginTop="1sp"
                     android:textSize="14dp" />
                 <Button
-                    android:id="@+id/btns"
-                    android:background="#031A32"
-                    android:layout_width="wrap_content"
-                    android:layout_height="55dp"
-                    android:text="settings"
-                    android:layout_marginTop="1sp"
-                    android:textSize="14dp" />
-
-                <Button
                     android:id="@+id/btnf"
                     android:layout_width="wrap_content"
                     android:layout_height="55dp"
@@ -65,6 +56,7 @@
                     android:background="#031A32"
                     android:text="first aid"
                     android:textSize="14dp" />
+
     <Button
         android:id="@+id/btnaniid"
         android:layout_width="wrap_content"
@@ -72,5 +64,13 @@
         android:layout_marginTop="1sp"
         android:background="#031A32"
         android:text="Animal identification"
+        android:textSize="14dp" />
+    <Button
+        android:id="@+id/btns"
+        android:background="#031A32"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="settings"
+        android:layout_marginTop="1sp"
         android:textSize="14dp" />
     </LinearLayout>

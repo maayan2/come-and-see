@@ -28,16 +28,17 @@
         android:background="#009688"
         tools:layout_editor_absoluteY="653dp"
         android:layout_gravity="center"/>
+
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/iv_gallery"
-        tools:srcCompet="@tools:sample/avatars"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        ></ImageView>
+        tools:srcCompat="@tools:sample/avatars"
+        />
 
 </LinearLayout>

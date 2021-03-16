@@ -15,44 +15,50 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="15sp"
+        android:fontFamily="cursive"
         android:gravity="center"
-        android:text="יצירת משתמש"
-        android:textColor="#022903"
-        android:textSize="30dp" />
+        android:text="create user:"
+        android:textColor="#009688"
+        android:textSize="50dp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/email"
         android:layout_width="141dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="30sp"
+        android:layout_marginTop="10sp"
         android:backgroundTint="#DAD2E8"
+        android:fontFamily="serif"
         android:gravity="center"
         android:hint="Email Address"
+        android:textSize="14sp"></EditText>
 
-        ></EditText>
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="1sp"
-        android:gravity="center"
         android:id="@+id/create_username"
-        android:hint="create username"
-        android:backgroundTint="#DAD2E8"
-
-        ></EditText>
-    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="1sp"
-        android:gravity="center"
-        android:id="@+id/create_password"
         android:backgroundTint="#DAD2E8"
+        android:fontFamily="serif"
+        android:gravity="center"
+
+        android:hint="create username"
+        android:textSize="14sp"></EditText>
+
+    <EditText
+        android:id="@+id/create_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="1sp"
+        android:backgroundTint="#DAD2E8"
+        android:fontFamily="serif"
+        android:gravity="center"
         android:hint="create password"
         android:inputType="textPassword"
-        ></EditText>
+        android:textSize="14sp"></EditText>
 
     <EditText
         android:id="@+id/verify_password"
@@ -61,35 +67,49 @@
         android:layout_gravity="center"
         android:layout_marginTop="1sp"
         android:backgroundTint="#DAD2E8"
+        android:fontFamily="serif"
         android:gravity="center"
         android:hint="verify password"
         android:inputType="textPassword"
-        ></EditText>
+        android:textSize="14sp"></EditText>
+
     <Button
         android:id="@+id/add_picture"
         android:layout_width="157dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10sp"
-        android:text="הוסף תמונה"
-        android:textSize="15dp" />
+        android:backgroundTint="#009688"
+        android:fontFamily="casual"
+        android:text="add picture"
+        android:textColor="#FFEB3B"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
     <ImageView
+        android:id="@+id/iv_profile"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:id="@+id/iv_profile"
-        tools:srcCompet="@tools:sample/avatars"
         android:layout_gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        ></ImageView>
+        tools:srcCompat="@tools:sample/avatars"
+        tools:srcCompet="@tools:sample/avatars"></ImageView>
+
     <Button
         android:id="@+id/btn_plus"
         android:layout_width="157dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="צור משתמש"
-        android:textSize="15dp" />
+        android:backgroundTint="#009688"
+        android:fontFamily="casual"
+        android:text="create user"
+        android:textColor="#FFEB3B"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:typeface="normal" />
 
 
 </LinearLayout>
