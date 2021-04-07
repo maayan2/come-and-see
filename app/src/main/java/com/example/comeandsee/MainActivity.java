@@ -62,14 +62,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void login() {
         String Email = email.getText().toString().trim();
         String password = Password.getText().toString().trim();
-        firebaseAuth.signInWithEmailAndPassword(Email,password).addOnCompleteListener(this, (task) ->{
-            if (task.isSuccessful()){
-                Intent intent = new Intent(MainActivity.this, HomePageActivity.class);
-                startActivity(intent);
-                finish();
-            }else {
-                tv.setText("Incorrect email/password");
-                Snackbar.make(findViewById(android.R.id.content),"Incorrect email/password",Snackbar.LENGTH_SHORT).show();
+        firebaseAuth.signInWithEmailAndPassword(Email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()) {
+                    Intent intent = new Intent(MainActivity.this, HomePageActivity.class);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    tv.setText("Incorrect email/password");
+                    Snackbar.make(findViewById(android.R.id.content), "Incorrect email/password", Snackbar.LENGTH_SHORT).show();
+                }
             }
         });
     }

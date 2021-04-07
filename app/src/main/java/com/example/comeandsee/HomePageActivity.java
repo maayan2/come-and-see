@@ -16,7 +16,6 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
     private Button btnpro;
     private Button btnor;
     private Button btv;
-    private Button btns;
     private Button btnf;
     private Button btnaniid;
     private Button btng;
@@ -36,8 +35,6 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
         btnor.setOnClickListener(this);
         btv = findViewById(R.id.btv);
         btv.setOnClickListener(this);
-        btns = findViewById(R.id.btns);
-        btns.setOnClickListener(this);
         btnf = findViewById(R.id.btnf);
         btnf.setOnClickListener(this);
         btnaniid = findViewById(R.id.btnaniid);
@@ -63,10 +60,6 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
         }
         if (v == btv) {
             Intent intent = new Intent(this, VolunteeringActivity.class);
-            startActivity(intent);
-        }
-        if (v == btns) {
-            Intent intent = new Intent(this, SettingsActivity.class);
             startActivity(intent);
         }
         if (v == btnf) {

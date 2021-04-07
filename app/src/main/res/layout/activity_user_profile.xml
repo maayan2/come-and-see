@@ -98,6 +98,16 @@
         tools:srcCompat="@tools:sample/avatars"
         tools:srcCompet="@tools:sample/avatars"></ImageView>
 
+    <ProgressBar
+        android:id="@+id/pb"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_weight="0.5"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+
     <Button
         android:id="@+id/btn_plus"
         android:layout_width="157dp"

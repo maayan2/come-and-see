@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.comeandsee">
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,10 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ComeAndSee">
-        <activity android:name=".AnimalidActivity"></activity>
+        <activity android:name=".AnimalidActivity" />
         <activity android:name=".UserProfileActivity" />
         <activity android:name=".HomePageActivity" />
-        <activity android:name=".SettingsActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".VolunteeringActivity" />
         <activity android:name=".OrnithologyActivity" />

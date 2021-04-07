@@ -5,27 +5,31 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:background="#1D456E"
+    android:background="#FFFFFF"
     tools:context=".HomePageActivity">
-    <Button
-                android:id="@+id/btnout"
-                android:background="#031A32"
-                android:layout_width="100dp"
-                android:layout_height="55dp"
-                android:text="Log out"
-                android:layout_marginTop="1sp"
-                android:textSize="14dp" />
+    <TextView
+        android:id="@+id/homepage_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15sp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Homepage"
+        android:textColor="#009688"
+        android:textSize="50dp"
+        android:textStyle="bold" />
             <Button
                 android:id="@+id/btnpro"
-                android:background="#031A32"
+                android:backgroundTint="#009688"
                 android:layout_width="121dp"
                 android:layout_height="55dp"
                 android:text="Profile"
-                android:layout_marginTop="1sp"
+                android:layout_marginTop="10sp"
                 android:textSize="14dp" />
     <Button
         android:id="@+id/btng"
-        android:background="#031A32"
+        android:backgroundTint="#009688"
         android:layout_width="100dp"
         android:layout_height="55dp"
         android:text="gallery"
@@ -33,7 +37,7 @@
         android:textSize="14dp" />
             <Button
                 android:id="@+id/btnor"
-                android:background="#031A32"
+                android:backgroundTint="#009688"
                 android:layout_width="wrap_content"
                 android:layout_height="55dp"
                 android:text="ornithology"
@@ -42,7 +46,7 @@
 
                 <Button
                     android:id="@+id/btv"
-                    android:background="#031A32"
+                    android:backgroundTint="#009688"
                     android:layout_width="wrap_content"
                     android:layout_height="55dp"
                     android:text="volunteering"
@@ -53,7 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="55dp"
                     android:layout_marginTop="1sp"
-                    android:background="#031A32"
+                    android:backgroundTint="#009688"
                     android:text="first aid"
                     android:textSize="14dp" />
 
@@ -62,15 +66,16 @@
         android:layout_width="wrap_content"
         android:layout_height="55dp"
         android:layout_marginTop="1sp"
-        android:background="#031A32"
+        android:backgroundTint="#009688"
         android:text="Animal identification"
-        android:textSize="14dp" />
+        android:textSize="14sp" />
     <Button
-        android:id="@+id/btns"
-        android:background="#031A32"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnout"
+        android:layout_width="100dp"
         android:layout_height="55dp"
-        android:text="settings"
-        android:layout_marginTop="1sp"
+        android:text="Log out"
+        android:backgroundTint="#009688"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp"
         android:textSize="14dp" />
     </LinearLayout>
