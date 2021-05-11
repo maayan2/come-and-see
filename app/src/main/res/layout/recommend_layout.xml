@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#009688"
+    tools:context=".Pop">
+    <TextView
+        android:id="@+id/recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15sp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Recommend:"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+    <CheckBox
+        android:id="@+id/cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Is it accessible for disabled people?"
+        android:textSize="20sp"/>
+    <EditText
+        android:hint= "season:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et"
+        android:textSize="20sp"/>
+    <EditText
+        android:hint= "area:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/area"
+        android:textSize="20sp"/>
+    <EditText
+        android:hint= "name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:textSize="20sp"/>
+    <EditText
+        android:hint= "description:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/d"
+        android:textSize="20sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnc"
+        android:textColor="#009688"
+        android:text = "upload!"
+        android:backgroundTint="#FFFFFF"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText"
+        />
+
+</LinearLayout>

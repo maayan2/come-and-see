@@ -33,9 +33,9 @@ import java.util.Random;
 
 public class GalleryActivity extends AppCompatActivity {
 
-    ImageButton add_to_gallery;
-    ImageView iv_gallery;
-    LinearLayout lhs;
+    private ImageButton add_to_gallery;
+    private ImageView iv_gallery;
+    private LinearLayout lhs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

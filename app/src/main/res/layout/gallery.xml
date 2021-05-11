@@ -18,6 +18,14 @@
         android:id="@+id/lhs"
         ></LinearLayout>
 </HorizontalScrollView>
+    <Button
+        android:id="@+id/GoBack"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="go back"
+        android:backgroundTint="#009688"
+        android:textSize="15dp" />
 <ImageButton
         android:id="@+id/add_to_gallery"
         android:layout_width="85dp"

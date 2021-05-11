@@ -6,13 +6,23 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     tools:context=".AnimalidActivity">
+    <Button
+        android:id="@+id/GoBack"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="go back"
+        android:backgroundTint="#009688"
+        android:textSize="15dp" />
     <TextView
-        android:text="בעלי חיים ארסיים בארץ ישראל"
+        android:text="A guide to identifying venomous animals in Israel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="30sp"
-        android:textColor="#1083F6"
+        android:textSize="50sp"
+        android:fontFamily="cursive"
+        android:textColor="#009688"
+        android:textStyle="bold"
         />
     <ListView
         android:layout_width="match_parent"
